@@ -4,7 +4,7 @@ This repository collects the implementations of algorithms in the paper "A Hiera
 
 ## Files in the repository
 
-There are 6 files in the project:
+There are 6 files in this repository:
 
 1. dae_analysis.py - The scripts for hierarchical structural analysis of dae models.
 2. nla_analysis.py - The scripts for hierarchical structural analysis of nla models.
@@ -15,8 +15,8 @@ There are 6 files in the project:
 
 ## How to run
 
-1. Load the project directory in Python environment.
-2. run dae_analysis.py or nla_analysis.py to analyze the singularity of example model.
+1. Load the script files in Python 2.7 environment.
+2. run dae_analysis.py or nla_analysis.py to analyze singularity of example models.
 
 ## Contact/Talk to me
 
