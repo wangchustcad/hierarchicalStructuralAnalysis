@@ -20,4 +20,4 @@ There are 6 files in this repository:
 
 ## Contact/Talk to me
 
-My e-email is wangc@hust.edu.cn. Feel free to contact me anytime, or just nag me if I'm being lazy.
+My e-email is xx@xxx.xx. Feel free to contact me anytime, or just nag me if I'm being lazy.
