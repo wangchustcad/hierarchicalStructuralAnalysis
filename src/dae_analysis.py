@@ -1,9 +1,3 @@
-"""Functions to find the under-constrained part of a component.
-
-Implemented following the algorithms in the paper "A fast structural
-analysis algorithms for reuse-oriented models" by Wang Chao
-using numpy and networkx modules of python.
-"""
 # --------Import modules-------------------------
 import networkx as nx
 from networkx import bipartite
@@ -11,20 +5,10 @@ from plot_graph import *
 from read_graph import *
 from constant_def import *
 from SSMatching import SSMatching
+
 IN_DEBUG=True
 
-
 def get_subgraph(graph, match):
-    """construct dummy equations in an undirected bipartite graph.
-
-    <g>: undirected bipartite graph. Nodes are separated by their
-         'bipartite' attribute.
-
-    Return <dummy_eqs>: list, each is a set of edges from a dummy equation to its variables.
-
-    Author: Chao Wang (wangc@hust.edu.cn)
-    Update time: 2021-03-21 20:04:51.
-    """
 
     # ---------------Find exposed variables
     var_nodes = {n for n, v in graph.nodes(data=True) if v[NTYPE] == VAR};
@@ -63,18 +47,6 @@ def get_subgraph(graph, match):
     return graph, well_constrained_vars;
 
 def find_feasible_paths_rec(graph, match, alternating_var, feasible_paths=None):
-    """Recursively search feasible paths.
-
-    <graph>: bipartite graph. Nodes are separated by their
-         'bipartite' attribute.
-    <feasible_paths>: set of feasible paths.
-    <alternating_var>: the source of the feasible paths.
-
-    Return <feasible_paths>: set of feasible_paths, including feasible paths from the alternating_var.
-
-    Author: Chao Wang (wangc@hust.edu.cn)
-    Update time: 2021-03-21 20:09:01.
-    """
 
     # -----------------if no unconstrained variable specified, terminate------------
     if not graph or not alternating_var:

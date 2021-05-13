@@ -18,6 +18,3 @@ There are 6 files in this repository:
 1. Load the script files in Python 2.7 environment.
 2. run dae_analysis.py or nla_analysis.py to analyze singularity of example models.
 
-## Contact/Talk to me
-
-My e-email is xx@xxx.xx. Feel free to contact me anytime, or just nag me if I'm being lazy.
